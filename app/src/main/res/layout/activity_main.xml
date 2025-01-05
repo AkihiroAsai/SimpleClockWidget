@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/pre_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="8sp"
+        android:textColor="#000000"
+        android:gravity="center" />
+    <!-- 日付を表示する -->
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1/1 (土)"
+        android:textSize="64sp"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+    <!-- 時刻を表示する -->
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="72sp"
+        android:textColor="#000000"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/aft_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="8sp"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+    <!-- 背景色選択 -->
+    <TextView
+        android:id="@+id/sel_back_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▶背景色を選択"
+        android:textSize="40sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Spinner
+        android:id="@+id/background_color_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- フォント色選択 -->
+    <TextView
+        android:id="@+id/sel_font_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▶文字色を選択"
+        android:textSize="40sp"
+        android:layout_marginBottom="20dp" />
+
+    <Spinner
+        android:id="@+id/font_color_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="20dp" />
+</LinearLayout>
